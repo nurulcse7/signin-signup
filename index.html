@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn SignUp</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn">SignIn</button>
+          <button type="button" class="toggle-btn">SignUp</button>
+        </div>
+        <div class="social-icons">
+          <img src="/assets/gp.png" alt="Google" />
+          <img src="/assets/tw.png" alt="Twitter" />
+          <img src="/assets/fb.png" alt="Facebook" />
+        </div>
+        <form class="input-group">
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Your email"
+            required
+          />
+          <input
+            type="password"
+            class="password"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" class="check-box" name="" id="" />
+          <span>Remember Password</span>
+
+          <button type="submit" class="submit-btn">SignIn</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
