@@ -12,15 +12,20 @@
       <div class="form-box">
         <div class="button-box">
           <div id="btn"></div>
-          <button type="button" class="toggle-btn">SignIn</button>
-          <button type="button" class="toggle-btn">SignUp</button>
+          <button type="button" class="toggle-btn" onclick="signin()">
+            SignIn
+          </button>
+          <button type="button" class="toggle-btn" onclick="signup()">
+            SignUp
+          </button>
         </div>
         <div class="social-icons">
           <img src="/assets/gp.png" alt="Google" />
           <img src="/assets/tw.png" alt="Twitter" />
           <img src="/assets/fb.png" alt="Facebook" />
         </div>
-        <form class="input-group">
+        <!-- SignIn form  -->
+        <form id="signin" class="input-group">
           <input
             type="email"
             class="input-field"
@@ -29,16 +34,41 @@
           />
           <input
             type="password"
-            class="password"
+            class="input-field"
             placeholder="Password"
             required
           />
           <input type="checkbox" class="check-box" name="" id="" />
           <span>Remember Password</span>
-
           <button type="submit" class="submit-btn">SignIn</button>
+        </form>
+        <!-- SignUp form  -->
+        <form id="signup" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Your email"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" class="check-box" name="" id="" />
+          <span >I agree to the terms and conditions</span>
+          <button type="submit" class="submit-btn">SignUp</button>
         </form>
       </div>
     </div>
+    <!-- Script Area  -->
+    <script src="/js/script.js"></script>
   </body>
 </html>

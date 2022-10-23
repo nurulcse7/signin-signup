@@ -20,6 +20,8 @@
   margin: 6% auto;
   background: #fff;
   padding: 5px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .button-box {
@@ -69,9 +71,9 @@
   transition: 0.5s;
 }
 
-.password {
+.input-field {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
   margin: 5px 0;
   border-left: 0;
   border-right: 0;
@@ -82,13 +84,14 @@
 }
 
 .check-box {
-  margin: 30px 10px 30px 0;
+  margin: 30px 10px 30px 0px;
 }
 span {
   color: #777;
   font-size: 12px;
-  bottom: 68px;
-  position: absolute;
+  /* bottom: 68px; */
+  /* position: absolute; */
+  
 }
 
 .submit-btn {
@@ -101,4 +104,11 @@ span {
   border: 0;
   outline: none;
   border-radius: 30px;
+}
+
+#signin{
+    left: 50px;
+}
+#signup{
+    left: 450px;
 }
